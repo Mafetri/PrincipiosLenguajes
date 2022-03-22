@@ -1,18 +1,19 @@
 PROGRAM tres;
 
-VAR r:integer;
+VAR r:real;
 
-FUNCTION superficie(r:integer): real;
+
+FUNCTION superficie(r:real): real;
 	BEGIN
 	superficie := 4 * pi * sqr(r);
 	END;
 
-FUNCTION volumen(r:integer): real;
+FUNCTION volumen(r:real): real;
 	BEGIN
 	volumen := (4/3) * pi * sqr(r) * r;
 	END;
 
-PROCEDURE calcular(r:integer);
+PROCEDURE calcular(r:real): real;
 	BEGIN
 	writeln('La superficie es: ', superficie(r));
 	writeln('El volumen es: ', volumen(r));
@@ -21,6 +22,5 @@ PROCEDURE calcular(r:integer);
 BEGIN
 	write('Ingrese radio de la esfera: ');
 	read(r);
-	writeln('r: ', r);
 	calcular(r);
 END.

@@ -1,0 +1,2 @@
+losCuatroIguales :: Int -> Int -> Int -> Int -> Bool
+losCuatroIguales n m p x = (n == m) && (m == p) && (p == x)

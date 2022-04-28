@@ -1,0 +1,21 @@
+(max (2+3) (-7)) + (1-3)
+(max 5 -7) + -2
+?? 5 >= -7 = True
+5 + -2
+3
+
+cuantosIgualesDeDos 3 3
+?? 3 == 3 = True
+2
+
+cuantosIguales 1 4 3
+?? (1 == 4) && (4 == 3) = False
+?? (1 == 4) || (4 == 3) || (3 == 1) = False
+?? otherwise = True
+1
+
+allFourEqual 5 6 4 5
+?? (5 == 6) && (6 == 4) && (4 == 5)
+False
+
+

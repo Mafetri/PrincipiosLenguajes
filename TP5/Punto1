@@ -1,0 +1,15 @@
+
+	(2+3) => 5
+	$$ - 1^1 => $$ devuelve el ans asi que 4
+	(+) 5 8 => 13
+	5 - 4 - 3 => -2
+	7 / 3 => 2.33333
+	7 'div' 3 => 2
+	4 `div` $$ => 2
+	7 `mod` 3 => 1
+	True || False => True
+	even 9	=> false
+	succ 6 => 7
+	succ (pred 6) => 6
+	gcd 21 27 => 3
+

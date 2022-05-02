@@ -1,0 +1,4 @@
+esCuadradoPerfecto :: Floating -> Bool
+esCuadradoPerfecto n
+ | (sqrt n * sqrt n) == n = True
+ | otherwise = False

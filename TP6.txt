@@ -1,0 +1,28 @@
+4.
+	a. K (constante), MAXINT (constante), a, b, c (variables), 500 (literal)
+	b. Tiempo de Diseño:
+		-> ':=' para indicar que hay una operacion de asignacion
+		-> ';' para indicar nueva sentencia
+	   Tiempo de Implementacion:
+		-> Como se liga el simbolo de suma con la operacion +
+		-> Como se liga el simbolo de multiplicacion con la operacion *
+	   Tiempo de Compilacion:
+		-> El tipo Integer a a y b
+		-> El valor de K con 500
+	   Tiempo de Linkedcicion/Carga:
+   		-> Link-edicion, alguna libreria de matematica
+		-> Carga, posicion de memoria de la variable a
+	   Tiempo de Ejecucion:
+		-> Se liga el valor de b*k a a
+		-> Se liga el valor de la operacion de b+round(c) a a
+	c. Variables: a, b,c
+	   Constantes: K, MAXINT
+	   Literales: 500
+	   Operadores: +, *, <
+	   Funciones: if, read, round
+
+6.
+	a.
+		Tiempo de diseño: 1, 3, 4
+		Tiempo de implementacion: 
+		

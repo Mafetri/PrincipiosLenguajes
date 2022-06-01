@@ -1,0 +1,10 @@
+[1,2,3,4,5,6,7] == [1|2, 3, 4, 5, 6, 7]             = No, la cola tiene que ser una lista
+[1,2,3,4,5,6,7] == [1, 2, 3, 4, 5, 6, 7|[]]         = Si
+[1,2,3,4,5,6,7] == [1|[2, 3, 4, 5, 6, 7]]           = Si
+[1,2,3,4,5,6,7] == [1, 2, 3|[4|[5, 6, 7]]]          = Si
+[1,2,3,4,5,6,7] == [1|[2, 3, [4, 5, 6, 7]]]         = No, ya que la cola de la derecha es [e, e, L]
+[1,2,3,4,5,6,7] == [1, 2|[3, 4, 5, 6, 7, []]]       = No, ya que la cola tiene un elemento de mas, []
+[1,2,3,4,5,6,7] == [1, 2|[3, 4, 5, 6, 7|[]]]        = Si, ya que al ser la lista vacia la cola de la cola, no cuenta como elemento.
+[1,2,3,4,5,6,7] == [1, 2, [3, 4[5, 6, [7]]]]        = No, 7 elementos != 3 elementos
+[1,2,3,4,5,6,7] == [1|[2|[3|[4|[5|[6|[7|[]]]]]]]]   = Si 
+

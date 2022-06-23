@@ -17,7 +17,7 @@ reemplazar([X|L], Z, Y, [X|R]) :- X \= Z, reemplazar(L, Z, Y, R).
 
 cardinalidad(L, R) :- contarNoRepetidos(L, _, R).
 contarNoRepetidos([], _, 0).
-contarNoRepetidos([X|L], L2, s(R)) :- noExiste(X, L2), contarNoRepetidos(L, [X|L2], R).
+contarNoRepetidos([X|L], L2, R) :- noExiste(X, L2), contarNoRepetidos(L, [X|L2], Z), R is Z + 1.
 contarNoRepetidos([X|L], L2, R) :- not(noExiste(X, L2)), contarNoRepetidos(L, L2, R).
 noExiste(_, []).
 noExiste(X, [X|_]) :- false.
